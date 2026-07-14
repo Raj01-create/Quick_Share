@@ -1,0 +1,142 @@
+
+{% extends "layout.html" %}
+
+{% block title %}
+About | QuickShare
+{% endblock %}
+
+{% block content %}
+
+<div class="container py-5">
+
+    <div class="card shadow-sm border-0">
+
+        <div class="card-body p-5">
+
+            <h1 class="fw-bold mb-3">
+                About QuickShare
+            </h1>
+
+            <p class="lead text-muted">
+                <strong>Fast. Secure. Effortless File Sharing.</strong>
+            </p>
+
+            <p>
+                QuickShare is a modern QR-based file sharing platform built with
+                <strong>Python</strong>,
+                <strong>Flask</strong>, and
+                <strong>SQLite</strong>.
+                It enables users to upload files instantly, generate a unique
+                download link and QR code, and securely share files across
+                devices without requiring an account.
+            </p>
+
+            <p>
+                Designed with simplicity and speed in mind, QuickShare offers a
+                clean, responsive interface inspired by modern SaaS products
+                while providing reliable file management for everyday use.
+            </p>
+
+            <hr class="my-4">
+
+            <h3 class="mb-3">
+                Key Features
+            </h3>
+
+            <ul class="list-group list-group-flush">
+
+                <li class="list-group-item">
+                    📁 Upload multiple types of files including documents,
+                    images, videos, audio, archives, and spreadsheets.
+                </li>
+
+                <li class="list-group-item">
+                    🔒 Secure unique download links generated for every uploaded
+                    file.
+                </li>
+
+                <li class="list-group-item">
+                    📱 Instant QR code generation for quick sharing across
+                    mobile and desktop devices.
+                </li>
+
+                <li class="list-group-item">
+                    📊 Dashboard displaying total uploads, total downloads,
+                    and the latest uploaded file.
+                </li>
+
+                <li class="list-group-item">
+                    📜 Upload history with powerful search and sorting options.
+                </li>
+
+                <li class="list-group-item">
+                    📈 Download counter to track file popularity.
+                </li>
+
+                <li class="list-group-item">
+                    🗑 Delete uploaded files along with their associated QR
+                    codes.
+                </li>
+
+                <li class="list-group-item">
+                    🛡 Duplicate filename protection to prevent accidental
+                    overwrites.
+                </li>
+
+                <li class="list-group-item">
+                    ✅ File type validation for improved security.
+                </li>
+
+                <li class="list-group-item">
+                    📋 One-click copy link functionality.
+                </li>
+
+                <li class="list-group-item">
+                    🎨 Responsive, modern user interface built with Bootstrap 5.
+                </li>
+
+            </ul>
+
+            <hr class="my-4">
+
+            <h3 class="mb-3">
+                Why QuickShare?
+            </h3>
+
+            <p>
+                QuickShare was developed as a production-style project to
+                demonstrate practical backend development using Flask.
+                Instead of focusing only on file uploads, the project
+                emphasizes clean architecture, reusable utility modules,
+                secure file handling, database integration, QR code generation,
+                and a polished user experience.
+            </p>
+
+            <p>
+                It showcases real-world software engineering concepts such as
+                modular design, configuration management, input validation,
+                database operations, and responsive frontend development.
+            </p>
+
+            <hr class="my-4">
+
+            <h3 class="mb-3">
+                Our Mission
+            </h3>
+
+            <p>
+                Our mission is to make file sharing simple, fast, and
+                accessible. With QuickShare, users can share files in seconds
+                using nothing more than a secure link or a QR code, eliminating
+                unnecessary complexity while maintaining a smooth and reliable
+                experience.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
+```

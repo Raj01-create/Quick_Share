@@ -1,0 +1,288 @@
+/* Google Font */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+    --bg:#f5f7fb;
+    --white:#ffffff;
+    --dark:#1f2937;
+    --gray:#6b7280;
+    --border:#e5e7eb;
+    --primary:#2563eb;
+    --primary-hover:#1d4ed8;
+}
+
+body{
+    font-family:"Manrope",sans-serif;
+    background:var(--bg);
+    color:var(--dark);
+    line-height:1.6;
+}
+
+/* ---------- Navbar ---------- */
+
+.quick-navbar{
+    background:#ffffff;
+    border-bottom:1px solid var(--border);
+    padding:12px 0;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.quick-logo{
+    font-size:1.8rem;
+    font-weight:800;
+    color:var(--dark)!important;
+    text-decoration:none;
+}
+
+.logo-icon{
+    color:var(--primary);
+    margin-right:6px;
+}
+
+.quick-link{
+    color:var(--dark)!important;
+    font-weight:600;
+    margin-left:20px;
+    transition:.2s;
+}
+
+.quick-link:hover{
+    color:var(--primary)!important;
+}
+
+.quick-btn{
+    background:var(--primary);
+    color:#fff;
+    padding:10px 22px;
+    border-radius:10px;
+    font-weight:600;
+    border:none;
+}
+
+.quick-btn:hover{
+    background:var(--primary-hover);
+    color:#fff;
+}
+
+/* ---------- Layout ---------- */
+
+.main-content{
+    padding:30px 0;
+}
+
+.container{
+    max-width:1140px;
+}
+
+/* ---------- Cards ---------- */
+
+.card{
+    border:none;
+    border-radius:14px;
+    background:#fff;
+    box-shadow:0 8px 20px rgba(0,0,0,.06);
+}
+
+.card-body{
+    padding:18px;
+}
+
+.card h2{
+    font-size:1.8rem;
+    color:var(--primary);
+    font-weight:800;
+}
+
+.card h5{
+    font-weight:700;
+}
+
+.card p{
+    margin:0;
+    color:var(--gray);
+}
+
+/* ---------- Hero ---------- */
+
+.hero{
+    background:#fff;
+    border-radius:16px;
+    padding:35px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.06);
+}
+
+.hero h1{
+    font-size:3rem;
+    font-weight:800;
+    margin-bottom:20px;
+}
+
+.hero p{
+    color:var(--gray);
+    max-width:600px;
+    margin:0 auto 20px;
+    font-size:15px;
+}
+
+/* ---------- Upload ---------- */
+
+.hero form{
+    max-width:600px;
+    margin:auto;
+}
+
+input[type=file]{
+    width:100%;
+    padding:12px;
+    border:2px dashed var(--border);
+    border-radius:12px;
+    margin-bottom:20px;
+    background:#fafafa;
+}
+
+button{
+    background:var(--primary);
+    color:#fff;
+    border:none;
+    padding:12px 28px;
+    border-radius:10px;
+    font-weight:700;
+}
+
+button:hover{
+    background:var(--primary-hover);
+}
+
+/* ---------- Table ---------- */
+
+table{
+    width:100%;
+    background:#fff;
+    border-collapse:collapse;
+    border-radius:14px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,.06);
+}
+
+th{
+    background:var(--primary);
+    color:#fff;
+    padding:16px;
+    text-align:left;
+}
+
+td{
+    padding:16px;
+    border-bottom:1px solid var(--border);
+}
+
+tr:hover{
+    background:#f8fafc;
+}
+
+/* ---------- Search ---------- */
+
+form input[type=text]{
+    padding:12px;
+    border:1px solid var(--border);
+    border-radius:10px;
+    width:100%;
+}
+
+/* ---------- About ---------- */
+
+h1{
+    margin-bottom:20px;
+    font-weight:800;
+}
+
+h2{
+    margin-bottom:25px;
+    font-weight:700;
+}
+
+p{
+    color:var(--gray);
+}
+
+/* ---------- Footer ---------- */
+
+footer{
+    margin-top:70px;
+    padding:25px;
+    text-align:center;
+    color:var(--gray);
+    border-top:1px solid var(--border);
+}
+
+/* ---------- Responsive ---------- */
+
+@media(max-width:991px){
+
+.quick-navbar{
+    padding:15px 0;
+}
+
+.quick-link{
+    margin:12px 0;
+}
+
+.quick-btn{
+    width:100%;
+    margin-top:15px;
+}
+
+.hero{
+    padding:40px 25px;
+}
+
+.hero h1{
+    font-size:2.3rem;
+    margin-bottom:12px;
+}
+
+.card{
+    margin-bottom:20px;
+}
+
+table{
+    display:block;
+    overflow-x:auto;
+}
+
+}
+
+@media(max-width:576px){
+
+.main-content{
+    padding:35px 0;
+}
+
+.hero{
+    padding:30px 20px;
+}
+
+.hero h1{
+    font-size:1.8rem;
+}
+
+.quick-logo{
+    font-size:1.5rem;
+}
+
+.card-body{
+    padding:20px;
+}
+
+button{
+    width:100%;
+}
+
+}

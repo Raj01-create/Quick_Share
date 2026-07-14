@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="container">
+
+    <h2>✅ Upload Successful</h2>
+
+    <h3>{{ filename }}</h3>
+
+    <img src="/qr/{{ code }}.png" width="250">
+
+    <br><br>
+
+    <input type="text" value="{{ link }}" id="link" readonly>
+
+    <button onclick="copyLink()">
+        Copy Link
+    </button>
+
+</div>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+{% endblock %}

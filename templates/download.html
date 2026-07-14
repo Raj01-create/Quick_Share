@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="container">
+
+    <h2>{{ file.filename }}</h2>
+
+    <p>Size : {{ file.file_size }}</p>
+
+    <p>Downloads : {{ file.download_count }}</p>
+
+    <p>Uploaded : {{ file.upload_time }}</p>
+
+    <a href="/file/{{ file.stored_filename }}">
+        <button>
+            Download File
+        </button>
+    </a>
+
+</div>
+
+{% endblock %}
