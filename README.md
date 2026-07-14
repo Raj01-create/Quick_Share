@@ -50,7 +50,7 @@ QuickShare provides a simple and fast way to transfer files without requiring us
 ---
 
 ## 🏗️ Project Structure
-
+```
 QuickShare/
 │
 ├── app.py                 # Main Flask application
@@ -74,13 +74,13 @@ QuickShare/
     ├── css/               # Stylesheets
     └── js/                # JavaScript files
 
-
+```
 ## ⚙️ Installation & Setup
 
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/quickshare.git
+https://github.com/Raj01-create/Quick_Share.git
 ```
 
 ### 2. Navigate to project directory
